@@ -16,6 +16,7 @@ from algorithm.sorts.merge_sort import merge_sort
 from algorithm.sorts.insertion_sort import insertion_sort
 from algorithm.sorts.selection_sort import selection_sort
 from algorithm.sorts.quick_sort import quick_sort
+from algorithm.sorts.shell_sort import shell_sort
 
 
 def time_measurement(func):
@@ -38,5 +39,7 @@ if __name__ == "__main__":
     # test_sort(10000, merge_sort)
     # test_sort(10000, insertion_sort)
     # test_sort(10000, selection_sort)
-    print(test_sort(10, quick_sort))
-    test_sort(10000, quick_sort)
+    # print(test_sort(10, quick_sort))
+    # test_sort(10000, quick_sort)
+    print(test_sort(10, shell_sort))
+    test_sort(10000, shell_sort)
